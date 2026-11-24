@@ -1,0 +1,25 @@
+{
+    "name": "Cartography.Masonry",
+    "rootNamespace": "Cartography.Masonry",
+    "references": [
+        "Cartography",
+        "Masonry"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "CARTOGRAPHY_MASONRY"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.aidancmays.masonry",
+            "expression": "0.4.0",
+            "define": "CARTOGRAPHY_MASONRY"
+        }
+    ],
+    "noEngineReferences": false
+}
