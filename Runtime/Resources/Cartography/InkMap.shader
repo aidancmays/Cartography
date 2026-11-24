@@ -26,9 +26,9 @@ Shader "Cartography/InkMap"
         _OutlineWidth ("Outline width (cells)", Float) = 1.2
         _WallStrength ("Wall ink", Range(0, 1)) = 1
         _Wobble ("Line wobble (cells)", Float) = 1.2
-        _HatchSpacing ("Hatch spacing (m)", Float) = 0.9
+        _HatchSpacing ("Hatch spacing (m)", Float) = 0.7
         _HatchReach ("Hatch reach (m)", Float) = 2.5
-        _HatchStrength ("Hatch ink", Range(0, 1)) = 0.55
+        _HatchStrength ("Hatch ink", Range(0, 1)) = 0.8
 
         [Header(Wash)]
         _Pooling ("Pigment pooling", Range(0, 1)) = 0.35

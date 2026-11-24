@@ -69,13 +69,21 @@ namespace Cartography
         public Vector3 Focus
         {
             get => focus;
-            set => focus = value;
+            set
+            {
+                focus = value;
+                UpdateView();
+            }
         }
 
         public float MetresAcross
         {
             get => metresAcross;
-            set => metresAcross = Mathf.Max(1f, value);
+            set
+            {
+                metresAcross = Mathf.Max(1f, value);
+                UpdateView();
+            }
         }
 
         public bool ClampToLayer
