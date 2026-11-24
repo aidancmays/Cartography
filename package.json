@@ -1,6 +1,6 @@
 {
   "name": "com.aidancmays.cartography",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Cartography",
   "description": "Maps that reveal as you explore. Describe a place as regions (room footprints) on layers (storeys), with walls and points of interest; reveal around whoever walks it; draw any layer in UI as an inked, hand-printed map. Reveal state packs small enough to send to late joiners. Builds straight from a Masonry layout when Masonry is installed.",
   "unity": "6000.3",

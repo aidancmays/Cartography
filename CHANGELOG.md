@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0
+
+- `MapView.LocalToWorld` and `MapView.ShownCentre`, for panning and zooming about the cursor.
+
 ## 0.1.0
 
 - `MapBuilder`: regions (box footprints turned about Y) on layers, connections, walls and features, laid out on a

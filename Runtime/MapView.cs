@@ -186,6 +186,22 @@ namespace Cartography
             return rect.min + Vector2.Scale(t, rect.size);
         }
 
+        /// <summary>
+        /// The world point (at the layer's elevation) shown at a point in this view's rect, in the rect transform's
+        /// local space. The inverse of <see cref="WorldToLocal"/>.
+        /// </summary>
+        public Vector3 LocalToWorld(Vector2 local)
+        {
+            var rect = rectTransform.rect;
+            if (layer == null || rect.width <= 0f || rect.height <= 0f)
+                return focus;
+            var t = new Vector2((local.x - rect.xMin) / rect.width, (local.y - rect.yMin) / rect.height);
+            return layer.UvToWorld(new Vector2(view.x + t.x * view.z, view.y + t.y * view.w));
+        }
+
+        /// <summary>The world point at the centre of what is shown (differs from <see cref="Focus"/> near the edge of the layer when clamped).</summary>
+        public Vector3 ShownCentre => LocalToWorld(rectTransform.rect.center);
+
         /// <summary>True if a local point (from <see cref="WorldToLocal"/>) is inside the rect, less a margin.</summary>
         public bool InView(Vector2 local, float margin = 0f)
         {
